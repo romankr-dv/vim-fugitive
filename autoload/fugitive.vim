@@ -4700,11 +4700,11 @@ function! s:StageReveal() abort
       let end += 1
     endwhile
   endif
-  if exists('end')
-    while line('.') > line('w0') + &scrolloff && end > line('w$')
-      execute "normal! \<C-E>"
-    endwhile
-  endif
+  "if exists('end')
+  "  while line('.') > line('w0') + &scrolloff && end > line('w$')
+  "    execute "normal! \<C-E>"
+  "  endwhile
+  "endif
 endfunction
 
 let s:file_pattern = '^[A-Z?] .\|^diff --'
